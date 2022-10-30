@@ -1,0 +1,29 @@
+abstact class Animal
+{
+    private final String nom;
+
+    
+    public String toString()
+    {
+        return String.format("||Animal :: %s||",nom);
+    }
+}
+
+public class Dog  extends Animal
+{
+    @Override
+    public String toString()
+    {
+        return String.format("||Dog ::  %s||",nom);
+    }
+}
+
+public class Cat  extends Animal
+{
+    @Override
+    public String toString()
+    {
+        return String.format("||Cat ::  %s||",nom);
+    }
+}
+
